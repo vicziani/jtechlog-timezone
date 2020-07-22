@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/api/employees
+Accept: application/json
+
+### Create employee
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "validFrom": "2020-04-01T10:00:00"
+}
+
+### Create employee with timezone
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "validFrom": "2020-04-01T10:00:00+02:00"
+}
+
+###
